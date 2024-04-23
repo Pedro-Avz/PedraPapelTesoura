@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pedrapapeltesoura.R
 import com.example.pedrapapeltesoura.databinding.ActivityGame1v2Binding
+import com.example.pedrapapeltesoura.model.Jokenpo
 
 
 class GameActivity1v2: AppCompatActivity() {
@@ -16,6 +17,7 @@ class GameActivity1v2: AppCompatActivity() {
     private var mao: String? = null
     private var aplicativo1: String? = null
     private var aplicativo2: String? = null
+    private val jokenpo = Jokenpo()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,9 +88,8 @@ class GameActivity1v2: AppCompatActivity() {
     }
     //pegar um jogada random do app
     private fun jogadaAplicativo(): String {
-        val maos = arrayOf("pedra", "papel", "tesoura")
-        val maoAplicativo = (0 until maos.size).random()
-        return maos[maoAplicativo]
+        val maos = jokenpo.maos.random()
+        return maos
     }
 
 

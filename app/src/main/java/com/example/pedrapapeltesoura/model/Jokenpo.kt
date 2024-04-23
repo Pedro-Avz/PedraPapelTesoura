@@ -5,8 +5,5 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Jokenpo(
-    var pedra: String = "",
-    var papel: String = "",
-    var tesoura: String ="",
-
+    val maos: List<String> = listOf("pedra", "papel", "tesoura")
 ): Parcelable

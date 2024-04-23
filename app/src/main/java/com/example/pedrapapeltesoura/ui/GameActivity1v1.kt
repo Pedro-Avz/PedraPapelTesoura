@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pedrapapeltesoura.R
 import com.example.pedrapapeltesoura.databinding.ActivityGameBinding
+import com.example.pedrapapeltesoura.model.Jokenpo
 
 class GameActivity1v1: AppCompatActivity() {
     private val agb: ActivityGameBinding by lazy {
@@ -14,6 +15,7 @@ class GameActivity1v1: AppCompatActivity() {
     }
     private var mao: String? = null
     private var aplicativo1: String? = null
+    private val jokenpo = Jokenpo()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,12 +72,9 @@ class GameActivity1v1: AppCompatActivity() {
     }
     //pegar um jogada random do app
     private fun jogadaAplicativo(): String {
-        val maos = arrayOf("pedra", "papel", "tesoura")
-        val maoAplicativo = (0 until maos.size).random()
-        return maos[maoAplicativo]
+        val maos = jokenpo.maos.random()
+        return maos
     }
-
-
 
     //funções apenas para o app indicar a escolha do usuário
     private fun ImageView.scaleIconSize(){
