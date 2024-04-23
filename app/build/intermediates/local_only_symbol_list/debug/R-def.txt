@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_action_name
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id botao1v1
+id botao1v1v1
+id botaoPaper
+id botaoScizor
+id botaoStone
+id escolhaTv
+id saveBt
+id toolbar
+id toolbarIn
+layout activity_game
+layout activity_main
+layout toolbar
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.ContactsPdm
+style Theme.ContactsPdm
+xml backup_rules
+xml data_extraction_rules
