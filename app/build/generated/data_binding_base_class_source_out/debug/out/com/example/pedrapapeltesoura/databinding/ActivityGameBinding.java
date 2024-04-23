@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,32 +23,37 @@ public final class ActivityGameBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button botaoPaper;
-
-  @NonNull
-  public final Button botaoScizor;
-
-  @NonNull
-  public final Button botaoStone;
-
-  @NonNull
   public final TextView escolhaTv;
 
   @NonNull
-  public final Button saveBt;
+  public final ImageView imgPaper;
+
+  @NonNull
+  public final ImageView imgScizor;
+
+  @NonNull
+  public final ImageView imgStone;
+
+  @NonNull
+  public final Button jogarBt;
+
+  @NonNull
+  public final LinearLayout linerLayout;
 
   @NonNull
   public final ToolbarBinding toolbarIn;
 
-  private ActivityGameBinding(@NonNull ConstraintLayout rootView, @NonNull Button botaoPaper,
-      @NonNull Button botaoScizor, @NonNull Button botaoStone, @NonNull TextView escolhaTv,
-      @NonNull Button saveBt, @NonNull ToolbarBinding toolbarIn) {
+  private ActivityGameBinding(@NonNull ConstraintLayout rootView, @NonNull TextView escolhaTv,
+      @NonNull ImageView imgPaper, @NonNull ImageView imgScizor, @NonNull ImageView imgStone,
+      @NonNull Button jogarBt, @NonNull LinearLayout linerLayout,
+      @NonNull ToolbarBinding toolbarIn) {
     this.rootView = rootView;
-    this.botaoPaper = botaoPaper;
-    this.botaoScizor = botaoScizor;
-    this.botaoStone = botaoStone;
     this.escolhaTv = escolhaTv;
-    this.saveBt = saveBt;
+    this.imgPaper = imgPaper;
+    this.imgScizor = imgScizor;
+    this.imgStone = imgStone;
+    this.jogarBt = jogarBt;
+    this.linerLayout = linerLayout;
     this.toolbarIn = toolbarIn;
   }
 
@@ -77,33 +84,39 @@ public final class ActivityGameBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.botaoPaper;
-      Button botaoPaper = ViewBindings.findChildViewById(rootView, id);
-      if (botaoPaper == null) {
-        break missingId;
-      }
-
-      id = R.id.botaoScizor;
-      Button botaoScizor = ViewBindings.findChildViewById(rootView, id);
-      if (botaoScizor == null) {
-        break missingId;
-      }
-
-      id = R.id.botaoStone;
-      Button botaoStone = ViewBindings.findChildViewById(rootView, id);
-      if (botaoStone == null) {
-        break missingId;
-      }
-
       id = R.id.escolhaTv;
       TextView escolhaTv = ViewBindings.findChildViewById(rootView, id);
       if (escolhaTv == null) {
         break missingId;
       }
 
-      id = R.id.saveBt;
-      Button saveBt = ViewBindings.findChildViewById(rootView, id);
-      if (saveBt == null) {
+      id = R.id.imgPaper;
+      ImageView imgPaper = ViewBindings.findChildViewById(rootView, id);
+      if (imgPaper == null) {
+        break missingId;
+      }
+
+      id = R.id.imgScizor;
+      ImageView imgScizor = ViewBindings.findChildViewById(rootView, id);
+      if (imgScizor == null) {
+        break missingId;
+      }
+
+      id = R.id.imgStone;
+      ImageView imgStone = ViewBindings.findChildViewById(rootView, id);
+      if (imgStone == null) {
+        break missingId;
+      }
+
+      id = R.id.jogarBt;
+      Button jogarBt = ViewBindings.findChildViewById(rootView, id);
+      if (jogarBt == null) {
+        break missingId;
+      }
+
+      id = R.id.linerLayout;
+      LinearLayout linerLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linerLayout == null) {
         break missingId;
       }
 
@@ -114,8 +127,8 @@ public final class ActivityGameBinding implements ViewBinding {
       }
       ToolbarBinding binding_toolbarIn = ToolbarBinding.bind(toolbarIn);
 
-      return new ActivityGameBinding((ConstraintLayout) rootView, botaoPaper, botaoScizor,
-          botaoStone, escolhaTv, saveBt, binding_toolbarIn);
+      return new ActivityGameBinding((ConstraintLayout) rootView, escolhaTv, imgPaper, imgScizor,
+          imgStone, jogarBt, linerLayout, binding_toolbarIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

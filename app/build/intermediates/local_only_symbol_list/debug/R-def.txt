@@ -2,16 +2,19 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
-drawable ic_action_name
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable vetor_papel
+drawable vetor_pedra
+drawable vetor_tesoura
 id botao1v1
 id botao1v1v1
-id botaoPaper
-id botaoScizor
-id botaoStone
 id escolhaTv
-id saveBt
+id imgPaper
+id imgScizor
+id imgStone
+id jogarBt
+id linerLayout
 id toolbar
 id toolbarIn
 layout activity_game

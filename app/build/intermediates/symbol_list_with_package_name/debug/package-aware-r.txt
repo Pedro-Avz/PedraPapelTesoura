@@ -2983,7 +2983,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable ic_action_name
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3079,6 +3078,9 @@ drawable notify_panel_notification_icon_bg
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable vetor_papel
+drawable vetor_pedra
+drawable vetor_tesoura
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3174,9 +3176,6 @@ id bestChoice
 id blocking
 id botao1v1
 id botao1v1v1
-id botaoPaper
-id botaoScizor
-id botaoStone
 id bottom
 id bounce
 id bounceBoth
@@ -3305,6 +3304,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgPaper
+id imgScizor
+id imgStone
 id immediateStop
 id included
 id indeterminate
@@ -3313,6 +3315,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id jogarBt
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3323,6 +3326,7 @@ id legacy
 id line1
 id line3
 id linear
+id linerLayout
 id listMode
 id list_item
 id m3_side_sheet
@@ -3451,7 +3455,6 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id saveBt
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth

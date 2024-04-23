@@ -5,8 +5,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Jokenpo(
-    var stone: String = "",
-    var paper: String = "",
-    var scizor: String ="",
+    var pedra: String = "",
+    var papel: String = "",
+    var tesoura: String ="",
 
 ): Parcelable
