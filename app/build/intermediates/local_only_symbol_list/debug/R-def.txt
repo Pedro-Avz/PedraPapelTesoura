@@ -8,9 +8,13 @@ drawable ic_launcher_foreground
 drawable vetor_papel
 drawable vetor_pedra
 drawable vetor_tesoura
+id aplicativo1Tv
+id aplicativo2Tv
 id botao1v1
 id botao1v1v1
 id escolhaTv
+id imgAplicativo1
+id imgAplicativo2
 id imgPaper
 id imgScizor
 id imgStone

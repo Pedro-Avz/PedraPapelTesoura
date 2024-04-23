@@ -23,7 +23,13 @@ public final class ActivityGameBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView aplicativo1Tv;
+
+  @NonNull
   public final TextView escolhaTv;
+
+  @NonNull
+  public final ImageView imgAplicativo1;
 
   @NonNull
   public final ImageView imgPaper;
@@ -43,12 +49,14 @@ public final class ActivityGameBinding implements ViewBinding {
   @NonNull
   public final ToolbarBinding toolbarIn;
 
-  private ActivityGameBinding(@NonNull ConstraintLayout rootView, @NonNull TextView escolhaTv,
-      @NonNull ImageView imgPaper, @NonNull ImageView imgScizor, @NonNull ImageView imgStone,
-      @NonNull Button jogarBt, @NonNull LinearLayout linerLayout,
-      @NonNull ToolbarBinding toolbarIn) {
+  private ActivityGameBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aplicativo1Tv,
+      @NonNull TextView escolhaTv, @NonNull ImageView imgAplicativo1, @NonNull ImageView imgPaper,
+      @NonNull ImageView imgScizor, @NonNull ImageView imgStone, @NonNull Button jogarBt,
+      @NonNull LinearLayout linerLayout, @NonNull ToolbarBinding toolbarIn) {
     this.rootView = rootView;
+    this.aplicativo1Tv = aplicativo1Tv;
     this.escolhaTv = escolhaTv;
+    this.imgAplicativo1 = imgAplicativo1;
     this.imgPaper = imgPaper;
     this.imgScizor = imgScizor;
     this.imgStone = imgStone;
@@ -84,9 +92,21 @@ public final class ActivityGameBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.aplicativo1Tv;
+      TextView aplicativo1Tv = ViewBindings.findChildViewById(rootView, id);
+      if (aplicativo1Tv == null) {
+        break missingId;
+      }
+
       id = R.id.escolhaTv;
       TextView escolhaTv = ViewBindings.findChildViewById(rootView, id);
       if (escolhaTv == null) {
+        break missingId;
+      }
+
+      id = R.id.imgAplicativo1;
+      ImageView imgAplicativo1 = ViewBindings.findChildViewById(rootView, id);
+      if (imgAplicativo1 == null) {
         break missingId;
       }
 
@@ -127,8 +147,8 @@ public final class ActivityGameBinding implements ViewBinding {
       }
       ToolbarBinding binding_toolbarIn = ToolbarBinding.bind(toolbarIn);
 
-      return new ActivityGameBinding((ConstraintLayout) rootView, escolhaTv, imgPaper, imgScizor,
-          imgStone, jogarBt, linerLayout, binding_toolbarIn);
+      return new ActivityGameBinding((ConstraintLayout) rootView, aplicativo1Tv, escolhaTv,
+          imgAplicativo1, imgPaper, imgScizor, imgStone, jogarBt, linerLayout, binding_toolbarIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

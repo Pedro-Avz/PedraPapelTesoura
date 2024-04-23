@@ -3162,6 +3162,8 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id aplicativo1Tv
+id aplicativo2Tv
 id arc
 id asConfigured
 id async
@@ -3305,6 +3307,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgAplicativo1
+id imgAplicativo2
 id imgPaper
 id imgScizor
 id imgStone

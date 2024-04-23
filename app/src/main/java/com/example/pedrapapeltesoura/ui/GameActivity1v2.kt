@@ -1,6 +1,7 @@
 package com.example.pedrapapeltesoura.ui
 
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -47,6 +48,14 @@ class GameActivity1v2: AppCompatActivity() {
             aplicativo1 = jogadaAplicativo()
             aplicativo2 = jogadaAplicativo()
             dueloJokenpo(mao, aplicativo1, aplicativo2)
+
+            agb1v2.imgAplicativo1.setImageResource(getImageResourceForChoice(aplicativo1))
+            agb1v2.aplicativo1Tv.visibility = View.VISIBLE
+            agb1v2.imgAplicativo1.visibility = View.VISIBLE
+
+            agb1v2.imgAplicativo2.setImageResource(getImageResourceForChoice(aplicativo2))
+            agb1v2.aplicativo2Tv.visibility = View.VISIBLE
+            agb1v2.imgAplicativo2.visibility = View.VISIBLE
         }
 
     }
@@ -54,19 +63,25 @@ class GameActivity1v2: AppCompatActivity() {
     //verificacao do vencedor
     private fun dueloJokenpo(maoUsuario:String?, maoAplicativo1:String?, maoAplicativo2:String?){
 
-        if (maoUsuario == maoAplicativo1 && maoUsuario == maoAplicativo2){
-            Toast.makeText(this , "       O jogo EMPATOU!!!\nVocê escolheu " + maoUsuario + "\nJogador 2 escolheu " + maoAplicativo1 +
-                    "\nJogador 3 escolheu " + maoAplicativo2, Toast.LENGTH_SHORT).show()
-        }else if((
-                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
-                            maoUsuario == "papel" && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
-                            maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "papel"
-                    )){
-            Toast.makeText(this, "         Você VENCEU !!!\nVocê escolheu " + maoUsuario + "\nJogador 2 escolheu " + maoAplicativo1 +
-                    "\nJogador 3 escolheu " + maoAplicativo2, Toast.LENGTH_SHORT).show()
+        if ((maoUsuario == maoAplicativo1 && maoUsuario == maoAplicativo2 ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "papel" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "papel" ||
+                    maoUsuario != maoAplicativo1 && maoUsuario != maoAplicativo2 && maoAplicativo1 != maoAplicativo2
+                ))
+        {
+            Toast.makeText(this , "Você EMPATOU!!!", Toast.LENGTH_SHORT).show()
+        }else if(( maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "papel" && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "papel"
+                    ))
+        {
+            Toast.makeText(this, "Você VENCEU !!!", Toast.LENGTH_SHORT).show()
         }else{
-            Toast.makeText(this, "         Você PERDEU !!!\nVocê escolheu " + maoUsuario + "\nJogador 2 escolheu " + maoAplicativo1 +
-                    "\nJogador 3 escolheu " + maoAplicativo2 , Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Você PERDEU !!!", Toast.LENGTH_SHORT).show()
         }
     }
     //pegar um jogada random do app
@@ -76,7 +91,12 @@ class GameActivity1v2: AppCompatActivity() {
         return maos[maoAplicativo]
     }
 
+
+
+
+
     //funções apenas para o app indicar a escolha do usuário
+
     private fun ImageView.scaleIconSize(){
         val largura = resources.getDimensionPixelSize(R.dimen.icon_size) * 1.2f
         val altura = resources.getDimensionPixelSize(R.dimen.icon_size) * 1.2f
@@ -94,5 +114,17 @@ class GameActivity1v2: AppCompatActivity() {
 
         agb1v2.imgScizor.layoutParams.width = resources.getDimensionPixelSize(R.dimen.icon_size)
         agb1v2.imgScizor.layoutParams.height = resources.getDimensionPixelSize(R.dimen.icon_size)
+    }
+
+    private fun getImageResourceForChoice(choice: String?): Int {
+        return when (choice) {
+            "pedra" -> R.drawable.vetor_pedra
+            "papel" -> R.drawable.vetor_papel
+            "tesoura" -> R.drawable.vetor_tesoura
+            else -> {
+                Toast.makeText(this@GameActivity1v2, "Escolha não reconhecida", Toast.LENGTH_SHORT).show()
+                R.drawable.vetor_pedra
+            }
+        }
     }
 }
