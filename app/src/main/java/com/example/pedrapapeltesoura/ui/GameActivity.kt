@@ -43,15 +43,15 @@ class GameActivity: AppCompatActivity() {
     private fun dueloJokenpo(maoUsuario:String?, maoAplicativo:String?){
 
         if (maoUsuario == maoAplicativo){
-            Toast.makeText(this , "O jogo terminou empatado o adversário também escolheu " + maoAplicativo, Toast.LENGTH_LONG).show()
+            Toast.makeText(this , "O jogo terminou empatado o adversário também escolheu " + maoAplicativo, Toast.LENGTH_SHORT).show()
         }else if((
             maoUsuario == "pedra" && maoAplicativo == "tesoura" ||
             maoUsuario == "papel" && maoAplicativo == "pedra" ||
             maoUsuario == "tesoura" && maoAplicativo == "papel"    
         )){
-            Toast.makeText(this, "Você venceu, o adversário escolheu " + maoAplicativo, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Você venceu, o adversário escolheu " + maoAplicativo, Toast.LENGTH_SHORT).show()
         }else{
-            Toast.makeText(this, "Você perdeu, o adversário escolheu " + maoAplicativo, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Você perdeu, o adversário escolheu " + maoAplicativo, Toast.LENGTH_SHORT).show()
         }
 
     }
