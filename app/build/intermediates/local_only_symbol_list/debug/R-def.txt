@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+dimen icon_size
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable vetor_papel
@@ -18,12 +19,13 @@ id linerLayout
 id toolbar
 id toolbarIn
 layout activity_game
+layout activity_game_1v2
 layout activity_main
 layout toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
-style Base.Theme.ContactsPdm
-style Theme.ContactsPdm
+style Base.Theme.PedraPapelTesoura
+style Theme.PedraPapelTesoura
 xml backup_rules
 xml data_extraction_rules

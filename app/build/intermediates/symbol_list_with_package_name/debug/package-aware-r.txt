@@ -2247,6 +2247,7 @@ dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
 dimen hint_pressed_alpha_material_light
+dimen icon_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -3702,6 +3703,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_game
+layout activity_game_1v2
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4042,7 +4044,6 @@ style Base_Theme_AppCompat_Light_Dialog_Alert
 style Base_Theme_AppCompat_Light_Dialog_FixedSize
 style Base_Theme_AppCompat_Light_Dialog_MinWidth
 style Base_Theme_AppCompat_Light_DialogWhenLarge
-style Base_Theme_ContactsPdm
 style Base_Theme_Material3_Dark
 style Base_Theme_Material3_Dark_BottomSheetDialog
 style Base_Theme_Material3_Dark_Dialog
@@ -4074,6 +4075,7 @@ style Base_Theme_MaterialComponents_Light_Dialog_Bridge
 style Base_Theme_MaterialComponents_Light_Dialog_FixedSize
 style Base_Theme_MaterialComponents_Light_Dialog_MinWidth
 style Base_Theme_MaterialComponents_Light_DialogWhenLarge
+style Base_Theme_PedraPapelTesoura
 style Base_ThemeOverlay_AppCompat
 style Base_ThemeOverlay_AppCompat_ActionBar
 style Base_ThemeOverlay_AppCompat_Dark
@@ -4499,7 +4501,6 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
-style Theme_ContactsPdm
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
@@ -4580,6 +4581,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_PedraPapelTesoura
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

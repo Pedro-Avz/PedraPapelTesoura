@@ -1,14 +1,18 @@
 [
     {
-        "merged": "com.example.pedrapapeltesoura.app-mergeDebugResources-30:/layout/activity_game.xml",
-        "source": "com.example.pedrapapeltesoura.app-main-33:/layout/activity_game.xml"
+        "merged": "C:\\Users\\Pedro\\Desktop\\Trab MOBILE\\PedraPapelTesoura\\daemon\\8.2\\com.example.pedrapapeltesoura.app-mergeDebugResources-30:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Pedro\\Desktop\\Trab MOBILE\\PedraPapelTesoura\\daemon\\8.2\\com.example.pedrapapeltesoura.app-main-33:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.pedrapapeltesoura.app-mergeDebugResources-30:/layout/activity_main.xml",
-        "source": "com.example.pedrapapeltesoura.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Pedro\\Desktop\\Trab MOBILE\\PedraPapelTesoura\\daemon\\8.2\\com.example.pedrapapeltesoura.app-mergeDebugResources-30:\\layout\\toolbar.xml",
+        "source": "C:\\Users\\Pedro\\Desktop\\Trab MOBILE\\PedraPapelTesoura\\daemon\\8.2\\com.example.pedrapapeltesoura.app-main-33:\\layout\\toolbar.xml"
     },
     {
-        "merged": "com.example.pedrapapeltesoura.app-mergeDebugResources-30:/layout/toolbar.xml",
-        "source": "com.example.pedrapapeltesoura.app-main-33:/layout/toolbar.xml"
+        "merged": "C:\\Users\\Pedro\\Desktop\\Trab MOBILE\\PedraPapelTesoura\\daemon\\8.2\\com.example.pedrapapeltesoura.app-mergeDebugResources-30:\\layout\\activity_game.xml",
+        "source": "C:\\Users\\Pedro\\Desktop\\Trab MOBILE\\PedraPapelTesoura\\daemon\\8.2\\com.example.pedrapapeltesoura.app-main-33:\\layout\\activity_game.xml"
+    },
+    {
+        "merged": "com.example.pedrapapeltesoura.app-mergeDebugResources-30:/layout/activity_game_1v2.xml",
+        "source": "com.example.pedrapapeltesoura.app-main-33:/layout/activity_game_1v2.xml"
     }
 ]

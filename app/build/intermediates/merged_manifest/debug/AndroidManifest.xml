@@ -26,7 +26,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.ContactsPdm" >
+        android:theme="@style/Theme.PedraPapelTesoura" >
         <activity
             android:name="com.example.pedrapapeltesoura.ui.MainActivity"
             android:exported="true" >
@@ -37,14 +37,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.pedrapapeltesoura.ui.GameActivity"
+            android:name="com.example.pedrapapeltesoura.ui.GameActivity1v1"
             android:exported="false" >
-            <intent-filter>
-                <action android:name="ABRA_CONTACT_ACTIVITY" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.pedrapapeltesoura.ui.GameActivity1v2"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

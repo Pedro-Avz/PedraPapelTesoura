@@ -11,9 +11,6 @@ class MainActivity : AppCompatActivity() {
     private val amb: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
-
-    private lateinit var carl: ActivityResultLauncher<Intent>
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(amb.root)
@@ -23,11 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         }
         amb.botao1v1.setOnClickListener{
-            val intent = Intent(this@MainActivity, GameActivity::class.java)
+            val intent = Intent(this@MainActivity, GameActivity1v1::class.java)
             startActivity(intent)
         }
         amb.botao1v1v1.setOnClickListener{
-            val intent = Intent(this@MainActivity, GameActivity::class.java)
+            val intent = Intent(this@MainActivity, GameActivity1v2::class.java)
             startActivity(intent)
         }
     }
