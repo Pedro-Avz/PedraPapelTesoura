@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.pedrapapeltesoura.R;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityGame1v2Binding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final TextView aplicativo1Tv;
@@ -55,8 +55,8 @@ public final class ActivityGame1v2Binding implements ViewBinding {
   @NonNull
   public final ToolbarBinding toolbarIn;
 
-  private ActivityGame1v2Binding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView aplicativo1Tv, @NonNull TextView aplicativo2Tv, @NonNull TextView escolhaTv,
+  private ActivityGame1v2Binding(@NonNull ScrollView rootView, @NonNull TextView aplicativo1Tv,
+      @NonNull TextView aplicativo2Tv, @NonNull TextView escolhaTv,
       @NonNull ImageView imgAplicativo1, @NonNull ImageView imgAplicativo2,
       @NonNull ImageView imgPaper, @NonNull ImageView imgScizor, @NonNull ImageView imgStone,
       @NonNull Button jogarBt, @NonNull LinearLayout linerLayout,
@@ -77,7 +77,7 @@ public final class ActivityGame1v2Binding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -169,7 +169,7 @@ public final class ActivityGame1v2Binding implements ViewBinding {
       }
       ToolbarBinding binding_toolbarIn = ToolbarBinding.bind(toolbarIn);
 
-      return new ActivityGame1v2Binding((ConstraintLayout) rootView, aplicativo1Tv, aplicativo2Tv,
+      return new ActivityGame1v2Binding((ScrollView) rootView, aplicativo1Tv, aplicativo2Tv,
           escolhaTv, imgAplicativo1, imgAplicativo2, imgPaper, imgScizor, imgStone, jogarBt,
           linerLayout, binding_toolbarIn);
     }

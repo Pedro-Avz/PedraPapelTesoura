@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.pedrapapeltesoura.R;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityGameBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final TextView aplicativo1Tv;
@@ -49,7 +49,7 @@ public final class ActivityGameBinding implements ViewBinding {
   @NonNull
   public final ToolbarBinding toolbarIn;
 
-  private ActivityGameBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aplicativo1Tv,
+  private ActivityGameBinding(@NonNull ScrollView rootView, @NonNull TextView aplicativo1Tv,
       @NonNull TextView escolhaTv, @NonNull ImageView imgAplicativo1, @NonNull ImageView imgPaper,
       @NonNull ImageView imgScizor, @NonNull ImageView imgStone, @NonNull Button jogarBt,
       @NonNull LinearLayout linerLayout, @NonNull ToolbarBinding toolbarIn) {
@@ -67,7 +67,7 @@ public final class ActivityGameBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -147,7 +147,7 @@ public final class ActivityGameBinding implements ViewBinding {
       }
       ToolbarBinding binding_toolbarIn = ToolbarBinding.bind(toolbarIn);
 
-      return new ActivityGameBinding((ConstraintLayout) rootView, aplicativo1Tv, escolhaTv,
+      return new ActivityGameBinding((ScrollView) rootView, aplicativo1Tv, escolhaTv,
           imgAplicativo1, imgPaper, imgScizor, imgStone, jogarBt, linerLayout, binding_toolbarIn);
     }
     String missingId = rootView.getResources().getResourceName(id);

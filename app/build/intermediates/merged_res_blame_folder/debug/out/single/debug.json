@@ -48,6 +48,10 @@
         "source": "C:\\Users\\Pedro\\Desktop\\Trab MOBILE\\PedraPapelTesoura\\daemon\\8.2\\com.example.pedrapapeltesoura.app-main-33:\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "com.example.pedrapapeltesoura.app-merged_res-31:/layout_activity_game.xml.flat",
+        "source": "com.example.pedrapapeltesoura.app-main-33:/layout/activity_game.xml"
+    },
+    {
         "merged": "com.example.pedrapapeltesoura.app-merged_res-31:/layout_activity_game_1v2.xml.flat",
         "source": "com.example.pedrapapeltesoura.app-main-33:/layout/activity_game_1v2.xml"
     },
