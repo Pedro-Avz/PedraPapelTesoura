@@ -43,6 +43,20 @@ class GameActivity1v1: AppCompatActivity() {
             (it as ImageView).scaleIconSize()
         }
 
+        agb.imgLagarto.setOnClickListener{
+            mao = "lagarto"
+            resetarDimensaoIcone()
+            (it as ImageView).scaleIconSize()
+
+        }
+
+        agb.imgSpock.setOnClickListener{
+            mao = "spock"
+            resetarDimensaoIcone()
+            (it as ImageView).scaleIconSize()
+
+        }
+
 
         agb.jogarBt.setOnClickListener {
             aplicativo1 = jogadaAplicativo()
@@ -61,9 +75,16 @@ class GameActivity1v1: AppCompatActivity() {
         if (maoUsuario == maoAplicativo){
             Toast.makeText(this , "Você EMPATOU!!!", Toast.LENGTH_SHORT).show()
         }else if((
-            maoUsuario == "pedra" && maoAplicativo == "tesoura" ||
-            maoUsuario == "papel" && maoAplicativo == "pedra" ||
-            maoUsuario == "tesoura" && maoAplicativo == "papel"    
+                    maoUsuario == "pedra" && maoAplicativo == "tesoura" ||
+                    maoUsuario == "pedra" && maoAplicativo == "lagarto" ||
+                    maoUsuario == "tesoura"  && maoAplicativo == "papel"||
+                    maoUsuario == "tesoura"  && maoAplicativo == "lagarto"||
+                    maoUsuario == "papel" && maoAplicativo == "pedra" ||
+                    maoUsuario == "papel" && maoAplicativo == "spock" ||
+                    maoUsuario == "lagarto" && maoAplicativo == "papel" ||
+                    maoUsuario == "lagarto" && maoAplicativo == "spock" ||
+                    maoUsuario == "spock" && maoAplicativo == "pedra" ||
+                    maoUsuario == "spock" && maoAplicativo == "tesoura"
         )){
             Toast.makeText(this, "Você VENCEU !!!", Toast.LENGTH_SHORT).show()
         }else{
@@ -94,6 +115,14 @@ class GameActivity1v1: AppCompatActivity() {
 
         agb.imgScizor.layoutParams.width = resources.getDimensionPixelSize(R.dimen.icon_size)
         agb.imgScizor.layoutParams.height = resources.getDimensionPixelSize(R.dimen.icon_size)
+
+        agb.imgSpock.layoutParams.width = resources.getDimensionPixelSize(R.dimen.icon_size)
+        agb.imgSpock.layoutParams.height = resources.getDimensionPixelSize(R.dimen.icon_size)
+
+        agb.imgLagarto.layoutParams.width = resources.getDimensionPixelSize(R.dimen.icon_size)
+        agb.imgLagarto.layoutParams.height = resources.getDimensionPixelSize(R.dimen.icon_size)
+
+
     }
 
     private fun getImageResourceForChoice(choice: String?): Int {
@@ -101,6 +130,8 @@ class GameActivity1v1: AppCompatActivity() {
             "pedra" -> R.drawable.vetor_pedra
             "papel" -> R.drawable.vetor_papel
             "tesoura" -> R.drawable.vetor_tesoura
+            "lagarto" -> R.drawable.lagarto_hand
+            "spock" -> R.drawable.hand_spock
             else -> {
                 Toast.makeText(this@GameActivity1v1, "Escolha não reconhecida", Toast.LENGTH_SHORT).show()
                 R.drawable.vetor_pedra

@@ -45,6 +45,20 @@ class GameActivity1v2: AppCompatActivity() {
             (it as ImageView).scaleIconSize()
         }
 
+        agb1v2.imgLagarto.setOnClickListener{
+            mao = "lagarto"
+            resetarDimensaoIcone()
+            (it as ImageView).scaleIconSize()
+
+        }
+
+        agb1v2.imgSpock.setOnClickListener{
+            mao = "spock"
+            resetarDimensaoIcone()
+            (it as ImageView).scaleIconSize()
+
+        }
+
 
         agb1v2.jogarBt.setOnClickListener {
             aplicativo1 = jogadaAplicativo()
@@ -68,17 +82,77 @@ class GameActivity1v2: AppCompatActivity() {
         if ((maoUsuario == maoAplicativo1 && maoUsuario == maoAplicativo2 ||
                     maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
                     maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
+
+
                     maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
                     maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "lagarto" ||
+
+
                     maoUsuario == "papel"  && maoAplicativo1 == "papel" && maoAplicativo2 == "pedra" ||
                     maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "papel" ||
-                    maoUsuario != maoAplicativo1 && maoUsuario != maoAplicativo2 && maoAplicativo1 != maoAplicativo2
+                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "lagarto" && maoAplicativo2 == "pedra" ||
+
+                    maoUsuario == "spock"  && maoAplicativo1 == "spock" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "lagarto" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "lagarto" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "lagarto" ||
+
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "spock" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock"
+
+
                 ))
         {
             Toast.makeText(this , "Você EMPATOU!!!", Toast.LENGTH_SHORT).show()
         }else if(( maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "lagarto" ||
                     maoUsuario == "papel" && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "papel"
+                    maoUsuario == "papel" && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "papel" && maoAplicativo1 == "pedra" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "papel" && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "spock" && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "spock" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "spock" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "spock" && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "lagarto" && maoAplicativo1 == "papel" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "lagarto" && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "lagarto" && maoAplicativo1 == "spock" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "lagarto" && maoAplicativo1 == "papel" && maoAplicativo2 == "spock"
                     ))
         {
             Toast.makeText(this, "Você VENCEU !!!", Toast.LENGTH_SHORT).show()
@@ -115,6 +189,12 @@ class GameActivity1v2: AppCompatActivity() {
 
         agb1v2.imgScizor.layoutParams.width = resources.getDimensionPixelSize(R.dimen.icon_size)
         agb1v2.imgScizor.layoutParams.height = resources.getDimensionPixelSize(R.dimen.icon_size)
+
+        agb1v2.imgSpock.layoutParams.width = resources.getDimensionPixelSize(R.dimen.icon_size)
+        agb1v2.imgSpock.layoutParams.height = resources.getDimensionPixelSize(R.dimen.icon_size)
+
+        agb1v2.imgLagarto.layoutParams.width = resources.getDimensionPixelSize(R.dimen.icon_size)
+        agb1v2.imgLagarto.layoutParams.height = resources.getDimensionPixelSize(R.dimen.icon_size)
     }
 
     private fun getImageResourceForChoice(choice: String?): Int {
@@ -122,6 +202,8 @@ class GameActivity1v2: AppCompatActivity() {
             "pedra" -> R.drawable.vetor_pedra
             "papel" -> R.drawable.vetor_papel
             "tesoura" -> R.drawable.vetor_tesoura
+            "lagarto" -> R.drawable.lagarto_hand
+            "spock" -> R.drawable.hand_spock
             else -> {
                 Toast.makeText(this@GameActivity1v2, "Escolha não reconhecida", Toast.LENGTH_SHORT).show()
                 R.drawable.vetor_pedra

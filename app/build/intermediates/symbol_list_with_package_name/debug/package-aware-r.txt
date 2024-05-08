@@ -2984,6 +2984,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable hand_spock
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3004,6 +3005,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable lagarto_hand
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3179,6 +3181,7 @@ id bestChoice
 id blocking
 id botao1v1
 id botao1v1v1
+id botaoLagartoSpock
 id bottom
 id bounce
 id bounceBoth
@@ -3309,8 +3312,10 @@ id ignoreRequest
 id image
 id imgAplicativo1
 id imgAplicativo2
+id imgLagarto
 id imgPaper
 id imgScizor
+id imgSpock
 id imgStone
 id immediateStop
 id included
@@ -3708,6 +3713,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_game
 layout activity_game_1v2
+layout activity_game_lagarto_spock
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

@@ -43,6 +43,9 @@
         <activity
             android:name="com.example.pedrapapeltesoura.ui.GameActivity1v2"
             android:exported="false" />
+        <activity
+            android:name="com.example.pedrapapeltesoura.ui.GameActivityLagartoSpock"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

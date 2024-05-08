@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".ui.GameActivity1v2"
             android:exported="false"/>
+        <activity android:name=".ui.GameActivityLagartoSpock"
+            android:exported="false"/>
     </application>
 
 </manifest>

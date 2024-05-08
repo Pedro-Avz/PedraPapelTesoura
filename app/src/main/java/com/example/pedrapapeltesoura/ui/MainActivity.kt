@@ -2,7 +2,6 @@ package com.example.pedrapapeltesoura.ui
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pedrapapeltesoura.databinding.ActivityMainBinding
 
@@ -25,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         }
         amb.botao1v1v1.setOnClickListener{
             val intent = Intent(this@MainActivity, GameActivity1v2::class.java)
+            startActivity(intent)
+        }
+
+        amb.botaoLagartoSpock.setOnClickListener {
+            val intent = Intent(this@MainActivity, GameActivityLagartoSpock::class.java)
             startActivity(intent)
         }
     }

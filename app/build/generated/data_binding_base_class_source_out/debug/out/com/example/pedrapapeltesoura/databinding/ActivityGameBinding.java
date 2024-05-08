@@ -32,10 +32,16 @@ public final class ActivityGameBinding implements ViewBinding {
   public final ImageView imgAplicativo1;
 
   @NonNull
+  public final ImageView imgLagarto;
+
+  @NonNull
   public final ImageView imgPaper;
 
   @NonNull
   public final ImageView imgScizor;
+
+  @NonNull
+  public final ImageView imgSpock;
 
   @NonNull
   public final ImageView imgStone;
@@ -50,15 +56,18 @@ public final class ActivityGameBinding implements ViewBinding {
   public final ToolbarBinding toolbarIn;
 
   private ActivityGameBinding(@NonNull ScrollView rootView, @NonNull TextView aplicativo1Tv,
-      @NonNull TextView escolhaTv, @NonNull ImageView imgAplicativo1, @NonNull ImageView imgPaper,
-      @NonNull ImageView imgScizor, @NonNull ImageView imgStone, @NonNull Button jogarBt,
-      @NonNull LinearLayout linerLayout, @NonNull ToolbarBinding toolbarIn) {
+      @NonNull TextView escolhaTv, @NonNull ImageView imgAplicativo1, @NonNull ImageView imgLagarto,
+      @NonNull ImageView imgPaper, @NonNull ImageView imgScizor, @NonNull ImageView imgSpock,
+      @NonNull ImageView imgStone, @NonNull Button jogarBt, @NonNull LinearLayout linerLayout,
+      @NonNull ToolbarBinding toolbarIn) {
     this.rootView = rootView;
     this.aplicativo1Tv = aplicativo1Tv;
     this.escolhaTv = escolhaTv;
     this.imgAplicativo1 = imgAplicativo1;
+    this.imgLagarto = imgLagarto;
     this.imgPaper = imgPaper;
     this.imgScizor = imgScizor;
+    this.imgSpock = imgSpock;
     this.imgStone = imgStone;
     this.jogarBt = jogarBt;
     this.linerLayout = linerLayout;
@@ -110,6 +119,12 @@ public final class ActivityGameBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imgLagarto;
+      ImageView imgLagarto = ViewBindings.findChildViewById(rootView, id);
+      if (imgLagarto == null) {
+        break missingId;
+      }
+
       id = R.id.imgPaper;
       ImageView imgPaper = ViewBindings.findChildViewById(rootView, id);
       if (imgPaper == null) {
@@ -119,6 +134,12 @@ public final class ActivityGameBinding implements ViewBinding {
       id = R.id.imgScizor;
       ImageView imgScizor = ViewBindings.findChildViewById(rootView, id);
       if (imgScizor == null) {
+        break missingId;
+      }
+
+      id = R.id.imgSpock;
+      ImageView imgSpock = ViewBindings.findChildViewById(rootView, id);
+      if (imgSpock == null) {
         break missingId;
       }
 
@@ -148,7 +169,8 @@ public final class ActivityGameBinding implements ViewBinding {
       ToolbarBinding binding_toolbarIn = ToolbarBinding.bind(toolbarIn);
 
       return new ActivityGameBinding((ScrollView) rootView, aplicativo1Tv, escolhaTv,
-          imgAplicativo1, imgPaper, imgScizor, imgStone, jogarBt, linerLayout, binding_toolbarIn);
+          imgAplicativo1, imgLagarto, imgPaper, imgScizor, imgSpock, imgStone, jogarBt, linerLayout,
+          binding_toolbarIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,9 +1,9 @@
-#Tue Apr 23 11:26:09 BRT 2024
-base.0=C\:\\Users\\Pedro\\Desktop\\trab-mobile\\PedraPapelTesoura\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\Pedro\\Desktop\\trab-mobile\\PedraPapelTesoura\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\Pedro\\Desktop\\trab-mobile\\PedraPapelTesoura\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=C\:\\Users\\Pedro\\Desktop\\trab-mobile\\PedraPapelTesoura\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.4=C\:\\Users\\Pedro\\Desktop\\trab-mobile\\PedraPapelTesoura\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+#Wed May 08 09:48:53 BRT 2024
+base.0=/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.3=/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
+base.4=/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex

@@ -26,13 +26,18 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button botao1v1v1;
 
   @NonNull
+  public final Button botaoLagartoSpock;
+
+  @NonNull
   public final ToolbarBinding toolbarIn;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button botao1v1,
-      @NonNull Button botao1v1v1, @NonNull ToolbarBinding toolbarIn) {
+      @NonNull Button botao1v1v1, @NonNull Button botaoLagartoSpock,
+      @NonNull ToolbarBinding toolbarIn) {
     this.rootView = rootView;
     this.botao1v1 = botao1v1;
     this.botao1v1v1 = botao1v1v1;
+    this.botaoLagartoSpock = botaoLagartoSpock;
     this.toolbarIn = toolbarIn;
   }
 
@@ -75,6 +80,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.botaoLagartoSpock;
+      Button botaoLagartoSpock = ViewBindings.findChildViewById(rootView, id);
+      if (botaoLagartoSpock == null) {
+        break missingId;
+      }
+
       id = R.id.toolbarIn;
       View toolbarIn = ViewBindings.findChildViewById(rootView, id);
       if (toolbarIn == null) {
@@ -83,7 +94,7 @@ public final class ActivityMainBinding implements ViewBinding {
       ToolbarBinding binding_toolbarIn = ToolbarBinding.bind(toolbarIn);
 
       return new ActivityMainBinding((ConstraintLayout) rootView, botao1v1, botao1v1v1,
-          binding_toolbarIn);
+          botaoLagartoSpock, binding_toolbarIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

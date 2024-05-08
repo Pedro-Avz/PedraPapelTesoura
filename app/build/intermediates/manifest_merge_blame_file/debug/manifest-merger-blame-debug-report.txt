@@ -9,135 +9,141 @@
 9        android:targetSdkVersion="34" />
 10
 11    <permission
-11-->[androidx.core:core:1.12.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.12.0] /home/aluno/.gradle/caches/transforms-3/4d13162283d09b9c9bedcbf64eea8d38/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 12        android:name="com.example.pedrapapeltesoura.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.12.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.12.0] /home/aluno/.gradle/caches/transforms-3/4d13162283d09b9c9bedcbf64eea8d38/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.12.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.12.0] /home/aluno/.gradle/caches/transforms-3/4d13162283d09b9c9bedcbf64eea8d38/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.example.pedrapapeltesoura.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.12.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.12.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.12.0] /home/aluno/.gradle/caches/transforms-3/4d13162283d09b9c9bedcbf64eea8d38/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.12.0] /home/aluno/.gradle/caches/transforms-3/4d13162283d09b9c9bedcbf64eea8d38/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:5:5-30:19
+17-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:5:5-32:19
 18        android:allowBackup="true"
-18-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:6:9-35
+18-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.12.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+19-->[androidx.core:core:1.12.0] /home/aluno/.gradle/caches/transforms-3/4d13162283d09b9c9bedcbf64eea8d38/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:7:9-65
+20-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:8:9-54
+23-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:9:9-43
+24-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:10:9-41
+25-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:11:9-54
+26-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:12:9-35
+27-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.PedraPapelTesoura" >
-29-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:13:9-55
+29-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:13:9-55
 30        <activity
-30-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:16:9-24:20
+30-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:16:9-24:20
 31            android:name="com.example.pedrapapeltesoura.ui.MainActivity"
-31-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:17:13-44
+31-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:17:13-44
 32            android:exported="true" >
-32-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:18:13-36
+32-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:18:13-36
 33            <intent-filter>
-33-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:19:13-23:29
+33-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:19:13-23:29
 34                <action android:name="android.intent.action.MAIN" />
-34-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:20:17-69
-34-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:20:25-66
+34-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:20:17-69
+34-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:20:25-66
 35
 36                <category android:name="android.intent.category.LAUNCHER" />
-36-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:22:17-77
-36-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:22:27-74
+36-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:22:17-77
+36-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:22:27-74
 37            </intent-filter>
 38        </activity>
 39        <activity
-39-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:25:9-27:20
+39-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:25:9-27:20
 40            android:name="com.example.pedrapapeltesoura.ui.GameActivity1v1"
-40-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:25:19-53
+40-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:25:19-53
 41            android:exported="false" >
-41-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:26:13-37
+41-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:26:13-37
 42        </activity>
 43        <activity
-43-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:28:9-29:39
+43-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:28:9-29:39
 44            android:name="com.example.pedrapapeltesoura.ui.GameActivity1v2"
-44-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:28:19-53
+44-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:28:19-53
 45            android:exported="false" />
-45-->C:\Users\Pedro\Desktop\trab-mobile\PedraPapelTesoura\app\src\main\AndroidManifest.xml:29:13-37
-46
-47        <provider
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\fd2e1203a98305522125a8a0138bcbc0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-48            android:name="androidx.startup.InitializationProvider"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\fd2e1203a98305522125a8a0138bcbc0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-49            android:authorities="com.example.pedrapapeltesoura.androidx-startup"
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\fd2e1203a98305522125a8a0138bcbc0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-50            android:exported="false" >
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\fd2e1203a98305522125a8a0138bcbc0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-51            <meta-data
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\fd2e1203a98305522125a8a0138bcbc0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\fd2e1203a98305522125a8a0138bcbc0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-53                android:value="androidx.startup" />
-53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\fd2e1203a98305522125a8a0138bcbc0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+45-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:29:13-37
+46        <activity
+46-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:30:9-31:39
+47            android:name="com.example.pedrapapeltesoura.ui.GameActivityLagartoSpock"
+47-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:30:19-62
+48            android:exported="false" />
+48-->/home/aluno/AndroidStudioProjects/PedraPapelTesoura/app/src/main/AndroidManifest.xml:31:13-37
+49
+50        <provider
+50-->[androidx.emoji2:emoji2:1.2.0] /home/aluno/.gradle/caches/transforms-3/fd2e1203a98305522125a8a0138bcbc0/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+51            android:name="androidx.startup.InitializationProvider"
+51-->[androidx.emoji2:emoji2:1.2.0] /home/aluno/.gradle/caches/transforms-3/fd2e1203a98305522125a8a0138bcbc0/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+52            android:authorities="com.example.pedrapapeltesoura.androidx-startup"
+52-->[androidx.emoji2:emoji2:1.2.0] /home/aluno/.gradle/caches/transforms-3/fd2e1203a98305522125a8a0138bcbc0/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+53            android:exported="false" >
+53-->[androidx.emoji2:emoji2:1.2.0] /home/aluno/.gradle/caches/transforms-3/fd2e1203a98305522125a8a0138bcbc0/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 54            <meta-data
-54-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\b300a850d70d6c915e58f78868a0bb68\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\b300a850d70d6c915e58f78868a0bb68\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+54-->[androidx.emoji2:emoji2:1.2.0] /home/aluno/.gradle/caches/transforms-3/fd2e1203a98305522125a8a0138bcbc0/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+55-->[androidx.emoji2:emoji2:1.2.0] /home/aluno/.gradle/caches/transforms-3/fd2e1203a98305522125a8a0138bcbc0/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 56                android:value="androidx.startup" />
-56-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\b300a850d70d6c915e58f78868a0bb68\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+56-->[androidx.emoji2:emoji2:1.2.0] /home/aluno/.gradle/caches/transforms-3/fd2e1203a98305522125a8a0138bcbc0/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 57            <meta-data
-57-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-58                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-58-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+57-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/aluno/.gradle/caches/transforms-3/b300a850d70d6c915e58f78868a0bb68/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/aluno/.gradle/caches/transforms-3/b300a850d70d6c915e58f78868a0bb68/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
 59                android:value="androidx.startup" />
-59-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-60        </provider>
-61
-62        <receiver
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-63            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-64            android:directBootAware="false"
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-65            android:enabled="true"
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-66            android:exported="true"
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-67            android:permission="android.permission.DUMP" >
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-68            <intent-filter>
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-69                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-70            </intent-filter>
+59-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/aluno/.gradle/caches/transforms-3/b300a850d70d6c915e58f78868a0bb68/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+60            <meta-data
+60-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+62                android:value="androidx.startup" />
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+63        </provider>
+64
+65        <receiver
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+66            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+67            android:directBootAware="false"
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+68            android:enabled="true"
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+69            android:exported="true"
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+70            android:permission="android.permission.DUMP" >
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 71            <intent-filter>
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-72                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+72                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 73            </intent-filter>
 74            <intent-filter>
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-75                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+75                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 76            </intent-filter>
 77            <intent-filter>
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-78                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Pedro\Desktop\Trab MOBILE\PedraPapelTesoura\caches\transforms-3\6f6664ef7d9272f9ecff2c30e1249d51\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+78                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 79            </intent-filter>
-80        </receiver>
-81    </application>
-82
-83</manifest>
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+81                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aluno/.gradle/caches/transforms-3/6f6664ef7d9272f9ecff2c30e1249d51/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+82            </intent-filter>
+83        </receiver>
+84    </application>
+85
+86</manifest>

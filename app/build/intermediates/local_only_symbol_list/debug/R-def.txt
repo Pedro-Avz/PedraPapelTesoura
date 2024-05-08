@@ -3,8 +3,10 @@ local
 color black
 color white
 dimen icon_size
+drawable hand_spock
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable lagarto_hand
 drawable vetor_papel
 drawable vetor_pedra
 drawable vetor_tesoura
@@ -12,11 +14,14 @@ id aplicativo1Tv
 id aplicativo2Tv
 id botao1v1
 id botao1v1v1
+id botaoLagartoSpock
 id escolhaTv
 id imgAplicativo1
 id imgAplicativo2
+id imgLagarto
 id imgPaper
 id imgScizor
+id imgSpock
 id imgStone
 id jogarBt
 id linerLayout
@@ -24,6 +29,7 @@ id toolbar
 id toolbarIn
 layout activity_game
 layout activity_game_1v2
+layout activity_game_lagarto_spock
 layout activity_main
 layout toolbar
 mipmap ic_launcher

@@ -61,6 +61,19 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:src="@drawable/vetor_tesoura" />
+            <ImageView
+                android:id="@+id/imgLagarto"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/lagarto_hand" />
+            <ImageView
+                android:id="@+id/imgSpock"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/hand_spock" />
+
         </LinearLayout>
 
         <TextView
@@ -116,7 +129,7 @@
             android:id="@+id/jogarBt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="80dp"
             android:text="Jogar"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
