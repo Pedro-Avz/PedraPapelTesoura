@@ -79,91 +79,67 @@ class GameActivity1v2: AppCompatActivity() {
     //verificacao do vencedor
     private fun dueloJokenpo(maoUsuario:String?, maoAplicativo1:String?, maoAplicativo2:String?){
 
-        if ((maoUsuario == maoAplicativo1 && maoUsuario == maoAplicativo2 ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "papel" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "pedra" ||
+        if ((
+                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "tesoura" ||
 
+                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "spock" ||
+                
 
-                    maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "lagarto" ||
                     maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
                     maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "lagarto" ||
+                 
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "lagarto"  && maoAplicativo1 == "spock" && maoAplicativo2 == "papel" ||
+    
 
-
-                    maoUsuario == "papel"  && maoAplicativo1 == "papel" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "papel"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "papel"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "papel"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "papel"  && maoAplicativo1 == "lagarto" && maoAplicativo2 == "pedra" ||
-
-                    maoUsuario == "spock"  && maoAplicativo1 == "spock" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "lagarto" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "lagarto" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "lagarto" ||
-
-                    maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "lagarto"  && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "lagarto"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "lagarto"  && maoAplicativo1 == "spock" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "lagarto"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "lagarto"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock"
+                    maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
 
                 ))
         {
-            Toast.makeText(this , "Você EMPATOU!!!", Toast.LENGTH_SHORT).show()
-        }else if(( maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "papel" && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "papel" && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "papel" && maoAplicativo1 == "pedra" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "papel" && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "tesoura" && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
-                    maoUsuario == "spock" && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "spock" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "spock" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "spock" && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
-                    maoUsuario == "lagarto" && maoAplicativo1 == "papel" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "lagarto" && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "lagarto" && maoAplicativo1 == "spock" && maoAplicativo2 == "papel" ||
-                    maoUsuario == "lagarto" && maoAplicativo1 == "papel" && maoAplicativo2 == "spock"
+            Toast.makeText(this , "Você VENCEU!!!", Toast.LENGTH_SHORT).show()
+            
+        }else if(( maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "papel" && maoAplicativo2 == "pedra" ||
+   
+                    maoUsuario == "papel" && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "papel" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "papel" && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "papel" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
+
+                    maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "tesoura" && maoAplicativo1 == "spock" && maoAplicativo2 == "tesoura" ||
+  
+                    maoUsuario == "spock" && maoAplicativo1 == "spock" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "spock" && maoAplicativo1 == "papel" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "spock" && maoAplicativo1 == "spock" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "spock" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "spock" ||
+
+                    maoUsuario == "lagarto" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "lagarto" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "lagarto"  ||
+                    maoUsuario == "lagarto" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "lagarto" && maoAplicativo1 == "pedra" && maoAplicativo2 == "lagarto" 
                     ))
         {
-            Toast.makeText(this, "Você VENCEU !!!", Toast.LENGTH_SHORT).show()
-        }else{
             Toast.makeText(this, "Você PERDEU !!!", Toast.LENGTH_SHORT).show()
+        }else{
+            Toast.makeText(this, "Você EMPATOU !!!", Toast.LENGTH_SHORT).show()
         }
     }
     //pegar um jogada random do app
@@ -171,8 +147,6 @@ class GameActivity1v2: AppCompatActivity() {
         val maos = jokenpo.maos.random()
         return maos
     }
-
-
 
 
 
