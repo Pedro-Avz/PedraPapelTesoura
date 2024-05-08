@@ -85,8 +85,15 @@ class GameActivity1v2: AppCompatActivity() {
                     maoUsuario == "pedra" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock" ||
                     maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "tesoura" ||
                     maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "spock" ||
-                    maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "spock" ||
                     maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "pedra" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "papel" && maoAplicativo2 == "spock" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "spock" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "papel" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "papel" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "pedra" && maoAplicativo2 == "lagarto" ||
+                    maoUsuario == "pedra" && maoAplicativo1 == "lagarto" && maoAplicativo2 == "pedra" ||
 
 
                     maoUsuario == "tesoura" && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
@@ -128,7 +135,6 @@ class GameActivity1v2: AppCompatActivity() {
                     maoUsuario == "lagarto"  && maoAplicativo1 == "papel" && maoAplicativo2 == "tesoura" ||
                     maoUsuario == "lagarto"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "papel" ||
                     maoUsuario == "lagarto"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "spock"
-
 
                 ))
         {
