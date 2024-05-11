@@ -105,7 +105,7 @@ class GameActivity1v2: AppCompatActivity() {
                     maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "pedra" ||
                     maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "tesoura" ||
                     maoUsuario == "spock"  && maoAplicativo1 == "tesoura" && maoAplicativo2 == "pedra" ||
-                    maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" ||
+                    maoUsuario == "spock"  && maoAplicativo1 == "pedra" && maoAplicativo2 == "tesoura" 
 
                 ))
         {
